@@ -1,0 +1,109 @@
+.signInPage {
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	
+	margin: 5em 2em 2em 2em ;
+}
+
+.signInContainer {
+	background-color: #fff;
+	border-radius: 10px;
+  	box-shadow: 0 16px 30px rgba(0,0,0,0.25), 
+			0 12px 12px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 800px;
+	max-width: 100%;
+	min-height: 480px;
+}
+
+.signInPage h1 {
+	font-weight: bold;
+	margin: 0;
+}
+
+.signInPage h2 {
+	text-align: center;
+}
+
+.signInPage p {
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	margin: 20px 0 30px;
+}
+.signInPage span {
+	font-size: 12px;
+}
+.signInPage input {
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+}
+.signInPage form {
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
+}
+
+.signInPage .form-container {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	transition: all 0.6s ease-in-out;
+}
+
+
+.signInContainer.right-panel-active .sign-in-container {
+	transform: translateX(100%);
+}
+
+
+.signInContainer.right-panel-active .sign-up-container {
+	transform: translateX(100%);
+	opacity: 1;
+	z-index: 5;
+	animation: show 0.6s;
+}
+
+@keyframes show {
+	0%, 49.99% {
+		opacity: 0;
+		z-index: 1;
+	}
+	
+	50%, 100% {
+		opacity: 1;
+		z-index: 5;
+	}
+}
+
+
+.signInPage .social-container {
+	margin: 20px 0;
+}
+
+.sign-google{
+
+  display: flex;
+  align-items: center;
+
+}
+.sign-google img{
+  height: 1.5em;
+  margin: 0.5em 0em 0.5em 0.8em;
+}
+.sign-google p{
+  margin: 0.5em 0.7em;
+}
